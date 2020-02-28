@@ -22,13 +22,22 @@ namespace SMFrame
 	{
 #if UNITY_EDITOR
 		#region Common 通用逻辑
+		// 添加组件的窗口对象
 		Type window = GetType("AddComponentWindow");
+
+		// 选中Component修改时的Event和Delegate
 		EventInfo selectionChanged;
+		Delegate selectDelegate;
+
+		// AddComponentWindow窗口关闭时的Event和Delegate
 		EventInfo windowClosed;
 		Delegate closedDelegate;
-		Delegate selectDelegate;
+
+		// ComponentItem的对象的对象
 		const string COMPONENT_ITEM_TYPE_NAME = "ComponentDropdownItem";
 		Type componentItem = GetType(COMPONENT_ITEM_TYPE_NAME);
+
+		// ComponentItem在AddComponentWindow显示的名字
 		PropertyInfo displayName;
 
 		private bool isClear = false;
