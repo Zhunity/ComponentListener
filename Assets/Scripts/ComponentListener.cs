@@ -198,44 +198,6 @@ namespace SMFrame
 				isClear = false;
 			}
 		}
-
-		/// <summary>
-		/// 添加Image
-		/// </summary>
-		private void AddImage()
-		{
-			var gos = Selection.gameObjects;
-			foreach (var go in gos)
-			{
-				Image image = go.GetComponent<Image>();
-				if (image == null)
-				{
-					Debug.LogError("can not find Image ", go);
-					continue;
-				}
-				
-			}
-		}
-
-		private void AddText()
-		{
-			var gos = Selection.gameObjects;
-			foreach (var go in gos)
-			{
-				Text text = go.GetComponent<Text>();
-				if (text == null)
-				{
-					Debug.LogError("can not find Text ", go);
-					continue;
-				}
-				
-			}
-		}
-
-		private void AddMask()
-		{
-
-		}
 #endif
 	}
 }
