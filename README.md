@@ -19,3 +19,7 @@ https://zhuanlan.zhihu.com/p/109791861
         static extern GameObject CreateDefaultGameObject(string name);
 
 public static event Action<Component> componentWasAdded;
+
+
+添加Inspector上的Add Component回调功能之后日谈
+https://zhuanlan.zhihu.com/p/118605767?just_published=2
