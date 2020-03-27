@@ -3,3 +3,19 @@
 
 介绍地址：
 https://zhuanlan.zhihu.com/p/109791861
+
+
+ public static class ObjectFactory
+    {
+        const int kInvalidSceneHandle = 0;
+
+        [FreeFunction(ThrowsException = true)]
+        static extern Object CreateDefaultInstance([NotNull] Type type);
+
+        [FreeFunction(ThrowsException = true)]
+        static extern Component AddDefaultComponent([NotNull] GameObject gameObject, [NotNull] Type type);
+
+        [FreeFunction]
+        static extern GameObject CreateDefaultGameObject(string name);
+
+public static event Action<Component> componentWasAdded;
