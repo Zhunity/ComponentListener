@@ -25,4 +25,4 @@ public static event Action<Component> componentWasAdded;
 https://zhuanlan.zhihu.com/p/118605767?just_published=2
 
 
-最新版代码请见：https://github.com/Zhunity/UnityCsReflection/tree/master/Document
+最新版代码请见：https://github.com/Zhunity/UnityCsReflection/tree/master/
